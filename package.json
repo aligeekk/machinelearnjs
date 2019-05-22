@@ -50,7 +50,6 @@
     "watch": "./scripts/tmux-start.sh",
     "watch:build": "yarn build:main -- -w",
     "watch:unit": "yarn test:unit --watch",
-    "watch:lint": "watch \" npx tslint --force -t verbose 'test/**/*.ts' 'src/**/*.ts'\" src",
     "doc": "npx del-cli docs/md_out && yarn doc:json && npx tsc ./docs/processor/index.ts && node ./docs/processor",
     "doc:build": "yarn doc && cd docs/md_out && npx vuepress build && cp _redirects ./.vuepress/dist",
     "doc:md": "npx del-cli docs/md_out && tsc ./docs/processor/index.ts && node ./docs/processor",
@@ -102,7 +101,8 @@
     "typedoc-plugin-markdown": "1.1.27",
     "typescript": "3.4.1",
     "vuepress": "0.12.0",
-    "watch": "1.0.2"
+    "webpack": "4.32.1",
+    "webpack-cli": "3.3.2"
   },
   "resolutions": {
     "webpack-dev-middleware": "3.6.0"
